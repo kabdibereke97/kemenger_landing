@@ -1,0 +1,44 @@
+.review__card {
+    width: 387px;
+    height: 284px;
+    border: 4px solid #018FA3;
+    border-radius: 30px;
+    padding: 32px 24px 0 36px;
+    &__wrapper {
+        display: flex;
+        align-items:center;
+        gap: 20px;
+        margin-bottom: 16px;
+        &__name {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+        }
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+    }
+}
+
+@media(max-width:992px) {
+    .review__card {
+        width: 300px;
+        &__wrapper {
+            &__name {
+                font-size: 20px;
+                line-height: 25px;
+            }
+        }
+        &__text {
+            font-size: 16px;
+            line-height: 20px;
+
+        }
+    }
+}

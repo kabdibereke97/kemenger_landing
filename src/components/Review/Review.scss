@@ -1,0 +1,104 @@
+.review {
+    padding-top: 80px;
+}
+.review__wrapper {
+    &__text {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 59px;
+        color: #000000;
+        text-align: center;
+        margin-bottom: 64px;
+    }
+    &__items {
+        .slick-next {
+            display: block;
+            background: url('../../assets/icons/next.svg') center center no-repeat;
+            height: 80px;
+            position: absolute;
+            border:none;
+            cursor:pointer;
+            z-index: 10000;
+            top: 100px;
+           right: -40px;
+            color:transparent
+        
+        }
+        .slick-prev {
+            display: block;
+            background: url('../../assets/icons/prev.svg') center center no-repeat;
+            height: 80px;
+            position: absolute;
+            border:none;
+            cursor:pointer;
+            z-index: 10000;
+            top: 100px;
+            left: -50px;
+            color:transparent
+        
+        }
+        .slick-initialized .slick-slide {
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            width: 414px;
+        }
+    }
+}
+
+@media(max-width:1358px) {
+    .review__wrapper {
+    
+        &__items {
+            .slick-next {
+                top: -80px;
+           right: 100px;
+            
+            }
+            .slick-prev {
+                top: -80px;
+                left: 100px;
+         
+            }
+            
+        }
+    }
+}
+
+@media(max-width:992px) {
+    .review__wrapper {
+    
+        &__items {
+            .slick-next {
+                top:20px;
+                right: 40%;
+                background:none;
+                cursor: none;
+            
+            }
+            .slick-prev {
+                top:20px;
+                left: 40%;
+                background:none;
+                cursor: none;
+            
+         
+            
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .review__wrapper {
+        &__text {
+   
+            font-size: 36px;
+            line-height: 45px;
+
+            margin-bottom: 25px;
+        }
+    }
+}

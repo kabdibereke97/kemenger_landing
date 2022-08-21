@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Header from "./components/Header/Header";
+import Promo from "./components/Promo/Promo";
+import Modal from "./components/Modal/Modal";
+import { useState } from "react";
+import AboutUs from "./components/AboutUs/AboutUs";
+import Catalog from "./components/Catalog/Catalog";
+import Certificats from "./components/Certificats/Certificats";
+import Review from "./components/Review/Review";
+import Contacts from "./components/Contacts/Contacts";
+import Map from "./components/Map/Map";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [activeModal, setActiveModal] = useState(false);
+	return (
+		<div className='App'>
+			{activeModal ? <Modal setActiveModal={setActiveModal} /> : null}
+			<Header />
+			<Promo setActiveModal={setActiveModal} activeModal={activeModal} />
+			<AboutUs />
+			<Catalog setActiveModal={setActiveModal} />
+			<Certificats />
+			<Review />
+			<Contacts />
+			<Map />
+		</div>
+	);
 }
 
 export default App;

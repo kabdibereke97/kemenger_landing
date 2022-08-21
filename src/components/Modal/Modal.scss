@@ -1,0 +1,195 @@
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .6);
+    z-index: 4564546465465;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    &__wrapper {
+        width: 400px;
+        height: 531px;
+        background: #F6FAFF;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        &__text {
+            margin-top: -20px;
+            width: 205px;
+            height: 87px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: center;
+            color: #000000;
+            margin-bottom: 32px;
+            
+
+        }
+       
+        &__close {
+            justify-self: start;
+            align-self:flex-end;
+            margin-right: 30px;
+            cursor: pointer;
+        }
+        &__form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            &__input {
+                width: 336px;
+                height: 60px;
+                background: white;
+                box-shadow: 0px 20px 45px -15px rgba(0, 0, 0, 0.05);
+                border-radius: 15px;
+            }
+            input,textarea {
+                background: white;
+                border:none;
+                width: 100%;
+                height: 90%;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 22px;
+                padding-left: 20px;
+                border-radius: 15px;
+                
+                &:focus {
+                    outline-style: none;
+                }
+            }
+            textarea {
+                padding-top: 20px;
+                resize: none;
+                height: 150%;
+            }
+            &__button {
+                margin-top: 40px;
+                align-self: center;
+                width: 244px;
+                height: 64px;
+                background: #FAE01A;
+                box-shadow: 3px 8px 24px 2px rgb(250 224 26);
+                border:none;
+                border-radius: 30px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                color: #000000;
+                cursor:pointer;
+            }
+        }
+        
+    }
+}
+
+@media(max-width:423px) {
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0, .6);
+        z-index: 4564546465465;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        &__wrapper {
+            width: 310px;
+            height: 531px;
+            background: #F6FAFF;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            &__text {
+                margin-top: -20px;
+                width: 205px;
+                height: 87px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 29px;
+                text-align: center;
+                color: #000000;
+                margin-bottom: 32px;
+                
+    
+            }
+            
+            &__close {
+                justify-self: start;
+                align-self:flex-end;
+                margin-right: 30px;
+                cursor: pointer;
+            }
+            &__form {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                &__input {
+                    width: 300px;
+                    height: 60px;
+                    background: white;
+                    box-shadow: 0px 20px 45px -15px rgba(0, 0, 0, 0.05);
+                    border-radius: 15px;
+                }
+                input,textarea {
+                    background: white;
+                    border:none;
+                    width: 100%;
+                    height: 90%;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 22px;
+                    padding-left: 20px;
+                    border-radius: 15px;
+                    
+                    &:focus {
+                        outline-style: none;
+                    }
+                }
+                textarea {
+                    padding-top: 20px;
+                    resize: none;
+                    height: 150%;
+                }
+                &__button {
+                    margin-top: 40px;
+                    align-self: center;
+                    width: 244px;
+                    height: 64px;
+                    background: #FAE01A;
+                    box-shadow: 3px 8px 24px 2px rgb(250 224 26);
+                    border:none;
+                    border-radius: 30px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #000000;
+                    cursor:pointer;
+                }
+            }
+            
+        }
+    }
+    
+} 

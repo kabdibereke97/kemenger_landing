@@ -1,0 +1,15 @@
+.map {
+    padding-top: 50px;
+    min-height: 1000px;
+}
+
+.map__wrapper {
+   margin: 0 15px;
+    border: 10px solid black;
+    border-radius: 15px;
+   height: 800px;
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}

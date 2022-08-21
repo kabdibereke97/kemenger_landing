@@ -1,0 +1,40 @@
+.certificats {
+    padding: 60px 0;
+    background: url('../../assets/img/certificats_bg.png') center center no-repeat;
+}
+
+.certificats__wrapper {
+    padding: 0 15px;
+    &__text {
+        text-align: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 59px;
+        color: #000000;
+        padding-bottom: 60px;
+    }
+    &__img   {
+        display: flex;
+
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+    }
+}
+
+@media(max-width:768px) {
+    .certificats__wrapper {
+        &__text {
+            font-size: 36px;
+            line-height: 45px;
+        }
+        &__img{
+            img {
+                width: 100%;
+            }
+            
+        }
+    }
+    
+}
